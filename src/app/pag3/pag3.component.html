@@ -1,0 +1,120 @@
+<div class="header">
+
+</div >
+<div *ngIf="mensaje == true">
+<table>
+<tr>
+  
+  <td><h1>
+    La educación virtual se caracteriza por ser:
+  
+  </h1>
+<h1>
+    Haz clic en cada titulo
+</h1>
+</td>
+  
+  <td> <img src="assets/img/tutor-circ.png" >
+</td>
+</tr>
+
+</table>
+ </div>
+  
+
+
+
+
+<div *ngIf="botones ==true">
+<table HEIGHT=400px>
+<tr>
+<td>
+<button type="button" (click)="mostrart1()"> Oportuna </button>
+</td>
+<td>
+  <button type="button" (click)="mostrart2()">Economica</button>
+</td>
+<td>
+  <button type="button" (click)="mostrart3()"> Compatible </button>
+</td>
+<td>
+  <button type="button" (click)="mostrart4()"> Innovadora </button>
+</td>
+<td>
+  <button type="button" (click)="mostrart5()"> Motivadora </button>
+</td>
+
+
+</tr>
+<tr>
+
+<td width= 150px>
+  <div *ngIf="tit1 == true">
+    <h5>
+  {{titulo1}}
+</h5>
+  </div>
+</td>
+<td width= 150px>
+  <div *ngIf="tit2 == true">
+    <h5>
+    {{titulo2}}
+  </h5>
+  </div>
+  
+  
+  </td>
+  <td width= 150px>
+    <div *ngIf="tit3 == true">
+    <h5>
+      {{titulo3}}
+    </h5>
+    </div>
+    </td>
+
+<td width= 150px>
+  <div *ngIf="tit4 == true">
+<h5>
+  {{titulo4}}
+</h5>
+</div>
+</td>
+<td width= 150px>
+  <div *ngIf="tit5 == true">
+
+  
+  <h5>
+    {{titulo5}}
+  </h5>
+  </div>
+  </td>
+
+</tr>
+
+</table>
+
+</div>
+
+
+<div class="bot">
+
+    <table WIDTH=100%>
+        
+        <tr>
+          <td WIDTH=90%><h1>{{pag}} de 5 </h1>
+      </td>
+          <td WIDTH=5%> <button (click)="regresarpag()">
+          regresar
+        </button></td>
+          <td WDTH=5%><button (click)="pasarpag()">
+          pasar
+        </button>
+                </td>
+      
+      
+        </tr>
+      
+      </table>
+      
+
+</div>

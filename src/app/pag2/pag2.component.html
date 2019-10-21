@@ -1,0 +1,74 @@
+<div class="header">
+
+      
+  </div>
+  
+
+<table>
+
+
+<tr>
+
+
+<td>
+  <div *ngIf="mensaje == true">
+    <h6 class= anuncio>
+        Para comenzar, lo invito a acceder a cualquiera de nuestros materiales
+      que aparecen a continuación: Puede descargar un PDF de 199 páginas,
+      dónde se realiza una introducción a la Cultura Virtual… o puede observar
+      un video de 10 minutos sobre el mismo tema…
+      </h6>
+      </div>
+</td>
+
+</tr>
+
+</table>
+
+
+<table WIDTH=100%  >
+  <tr>
+    <td WIDTH=20%><img width="50%"  src="assets/img/tutor.png"></td>
+    <td WIDTH=80%> 
+      <div *ngIf="video == true">
+      <p>
+        <iframe width="50%" height="350" [src]="getVideoIframe('https://www.youtube.com/watch?v=AoQYKdF3NKc')" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </p>
+        </div>
+</td>
+  </tr>
+  <tr>
+    <td>
+        <div  class="descargar"*ngIf="descargar == true">
+            <a href="assets/pdf/etnografia-virtual.pdf" download="etnografia-virtual">
+              Descargar Archivo
+              </a>
+            </div>
+    </td>
+  </tr>
+</table>
+
+
+
+        <div class="bot">
+        
+        <table WIDTH=100%>
+        
+          <tr>
+            <td WIDTH=90%><h1>{{pag}} de 5 </h1>
+        </td>
+            <td WIDTH=5%> <button (click)="regresarpag()">
+            regresar
+          </button></td>
+            <td WIDTH=5%><button (click)="pasarpag()">
+            pasar
+          </button>
+                  </td>
+        
+        
+          </tr>
+        
+        </table>
+        
+        </div>
+    

@@ -1,0 +1,36 @@
+
+.header{
+    height: 28px;
+}
+
+.form1{
+    text-align: center;
+    width: 400px;
+    padding: 1%;
+    background: cornflowerblue;
+    
+   
+}
+.bot{
+    
+      border: rgb(129, 127, 252) 5px solid;
+    }
+
+
+#divtotal{
+    
+    background-color: red;    
+    text-align: center;
+    
+}
+.general{
+    padding: 2%;
+    text-align: center;
+}
+
+.formgeneral{
+    height: 500px;
+    width: 500px;  
+    background: chartreuse;
+
+}

@@ -1,0 +1,137 @@
+
+<div>
+  <table>
+    <tr>
+
+      <td><h5>
+          Selecciona la respuesta que considere correcta.
+        </h5></td>
+      <td><img src="assets/img/tutor-circ.png" width="100"></td>
+    </tr>
+  </table>
+
+</div>
+
+<table>
+<tr>
+<td>
+
+<div>
+    <label >{{pregunta1}}</label>
+</div>
+<div  class="form-group">
+  
+    <div  class="btn-group-vertical" >
+        <button class="buton1" type="button" (click)="validar1(pregunta1,p1o1)">{{p1o1}}</button>
+        <button class="buton1" type="button" (click)="validar1(pregunta1,p1o2)">{{p1o2}}</button>
+        <button class="buton1" type="button" (click)="validar1(pregunta1,p1o3)">{{p1o3}}</button>
+      </div>
+</div>
+
+</td>
+<td>
+  <div >
+    <h5 *ngIf="respuesta1 == true">
+        Opción (a) correcto.
+       </h5>
+       <h5 *ngIf="respuesta1 == false">
+          
+         </h5>
+  </div>
+</td>
+</tr>
+</table>
+ 
+<table>
+    <tr>
+    <td>
+    
+    <div>
+        <label >{{pregunta2}}</label>
+    </div>
+    <div  class="form-group">
+      
+        <div  class="btn-group-vertical" >
+            <button class="buton1" type="button" (click)="validar2(pregunta2,p2o1)">{{p2o1}}</button>
+            <button class="buton1" type="button" (click)="validar2(pregunta2,p2o2)">{{p2o2}}</button>
+            <button class="buton1" type="button" (click)="validar2(pregunta2,p2o3)">{{p2o3}}</button>
+          </div>
+    </div>
+    
+    </td>
+    <td>
+      <div >
+        <h5 *ngIf="respuesta2 == true">
+            Opción(c) correcto.
+           </h5>
+           <h5 *ngIf="respuesta2 == false">
+              
+             </h5>
+      </div>
+    </td>
+    </tr>
+    </table>
+     
+    <table>
+        <tr>
+        <td>
+        
+        <div>
+            <label >{{pregunta3}}</label>
+        </div>
+        <div  class="form-group">
+          
+            <div  class="btn-group-vertical" >
+                <button class="buton1" type="button" (click)="validar3(pregunta3,p3o1)">{{p3o1}}</button>
+                <button class="buton1" type="button" (click)="validar3(pregunta3,p3o2)">{{p3o2}}</button>
+                <button class="buton1" type="button" (click)="validar3(pregunta3,p3o3)">{{p3o3}}</button>
+              </div>
+        </div>
+        
+        </td>
+        <td>
+          <div >
+            <h5 *ngIf="respuesta3 == true">
+               Opción (c) correcto.
+               </h5>
+               <h5 *ngIf="respuesta3 == false">
+                  
+                  </h5>
+          </div>
+        </td>
+        </tr>
+        </table>
+        
+   <div *ngIf="respuesta1 == true && respuesta2 == true && respuesta3 == true">
+     <button type="button"  (click)="continuar()">continuar</button>
+   </div>
+
+
+
+<div class="bot">
+
+    <table WIDTH=100%>
+        
+        <tr>
+          <td WIDTH=90%><h1>{{pag}} de 5 </h1>
+      </td>
+          <td WIDTH=5%> <button (click)="regresarpag()">
+          regresar
+        </button></td>
+   <td WIDTH=5%>
+
+        <div *ngIf="respuesta1 == true && respuesta2 == true && respuesta3 == true">
+       
+            <button (click)="pasarpag()">
+          pasar
+        </button>
+        </div>
+                </td>
+      
+      
+        </tr>
+      
+      </table>
+      
+
+</div>
